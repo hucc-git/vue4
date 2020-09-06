@@ -1,5 +1,23 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>{{count}}</h1>
+    <button @click="add">点击</button>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'About',
+  methods: {
+    add: function () {
+      console.log(this)
+      this.$store.dispatch('module1/add')
+    }
+  },
+  computed: {
+    count: function () {
+      return this.$store._state.data.module1.count
+    }
+  }
+}
+</script>
