@@ -12,6 +12,14 @@ export default {
     add: function () {
       console.log(this)
       this.$store.dispatch('module1/add')
+      this.axios({
+        method: 'post',
+        url: '/api/luyou/post',
+        data: {
+          date1: '2020-09-07'
+        }
+      }).then((res) => console.log(res))
+      console.log('submit!')
     }
   },
   computed: {

@@ -9,8 +9,10 @@
     "start": "npm run serve"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "core-js": "^3.6.5",
     "vue": "^3.0.0-0",
+    "vue-axios": "^2.1.5",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
